@@ -23,7 +23,9 @@
 
     <th:block th:each="province: ${provinces}">
         <tr>
-            <td><a th:href="@{/view-province/{id}(id=${province.getId()})}"><label th:text="${province.name}"></label></a></td>
+            <td><a th:href="@{/view-province/{id}(id=${province.getId()})}">
+                <label th:text="${province.name}"></label></a>
+            </td>
             <td><a th:href="@{/edit-province/{id}(id=${province.getId()})}">Edit</a></td>
             <td><a th:href="@{/delete-province/{id}(id=${province.getId()})}">Delete</a></td>
         </tr>
